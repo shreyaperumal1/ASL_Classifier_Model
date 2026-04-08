@@ -1,0 +1,18 @@
+
+==================================================
+Validation Results (SVM Baseline)
+==================================================
+  Accuracy  : 0.3776 (37.76%)
+  Precision : 0.4107  (macro)
+  Recall    : 0.3956  (macro)
+  F1 Score  : 0.3579  (macro)
+  Samples   : 339
+
+==================================================
+Test Results (SVM Baseline)
+==================================================
+  Accuracy  : 0.2971 (29.71%)
+  Precision : 0.3339  (macro)
+  Recall    : 0.2689  (macro)
+  F1 Score  : 0.2668  (macro)
+  Samples   : 340

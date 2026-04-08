@@ -1,11 +1,18 @@
-"""
 import kagglehub
+import shutil
+ 
+# ------------- Path Configuration -------------
 
-# Download latest version
+DESTINATION_DIR = r"Program\Datasets\GestureVideoData"       # Destination of Raw Dataset
+ 
+# ------------- Download Dataset -------------
+
+print("Downloading dataset...")
 path = kagglehub.dataset_download("waseemnagahhenes/sign-language-dataset-wlasl-videos")
+print(f"Downloaded to: {path}")
+ 
+# ------------- Copy to Destination -------------
 
-print("Path to dataset files:", path)
-"""
-# This code is for downloading the WLASL video dataset using the KaggleHub library. 
-# It retrieves the latest version of the dataset and prints the path to the downloaded files.
-# Download complete, the dataset will be available at the specified path for further processing and analysis.
+print(f"Copying to: {DESTINATION_DIR}...")
+shutil.copytree(path, DESTINATION_DIR)
+print("Done.")
